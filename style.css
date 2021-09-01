@@ -1,0 +1,16 @@
+body {
+    padding: 10px;
+}
+.code {
+    background: #f9f9fa;
+    font-size: .875rem;
+}
+.section {
+    display: block;
+}
+input {
+    width: 100%;
+}
+hr {
+    margin-top: 50px;
+}
