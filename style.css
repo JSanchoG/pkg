@@ -14,3 +14,15 @@ input {
 hr {
     margin-top: 50px;
 }
+@media (min-width: 1200px) {
+    a {
+        font-size: 2rem;
+    }
+}
+a {
+    font-size: calc(1.325rem + .9vw);
+    margin-top: 0;
+    margin-bottom: .5rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
