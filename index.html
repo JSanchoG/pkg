@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>TI Hub</title>
-        <link rel="shortcut icon" href="tihub.ico">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css"
-    </head>
-    <body>
-        <div>
-            <section class="section">
-                <div>
-                    <pre class="code"><code class="code">&lt;!DOCTYPE html&gt;
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TI Hub</title>
+    <link rel="shortcut icon" href="tihub.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css">
+</head>
+<body>
+    <div>
+        <section class="section">
+            <div>
+                <pre class="code"><code class="code">&lt;!DOCTYPE html&gt;
 &lt;html lang="en"&gt;
     &lt;head&gt;
         &lt;meta charset="utf-8"&gt;
@@ -22,41 +22,75 @@
     &lt;/head&gt;
     &lt;body&gt;&lt;/body&gt;
 &lt;/html&gt;</code></pre>
-                </div>
-            </section>
+            </div>
+        </section>
+    </div>
+    <div>
+        <h2><i class="fab fa-bootstrap fa-md"></i> Bootstrap</h2>
+        <div>CSS</div>
+        <input type="text" value="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css">
+        <br>
+        <input type="text" value="&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css&quot;&gt;">
+        <br><br>
+        <div>JavaScript</div>
+        <input type="text" value="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js">
+        <br>
+        <input type="text" value="&lt;script src=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js&quot; integrity=&quot;sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;">
+        <br><br>
+        <div>JavaScript Bundle</div>
+        <input type="text" value="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js">
+        <br>
+        <input type="text" value="&lt;script src=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js&quot; integrity=&quot;sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;">
+        <hr>
+        <br>
+        <h2><i class="fas fa-code fa-xs"></i> jQuery</h2>
+        <div>JavaScript</div>
+        <input type="text" value="https://code.jquery.com/jquery-3.6.0.min.js">
+        <br>
+        <input type="text" value="&lt;script src=&quot;https://code.jquery.com/jquery-3.6.0.min.js&quot;&gt;&lt;/script&gt;">
+        <hr>
+        <br>
+        <h2 id="ide-a" onclick="ide()" style="cursor:pointer"><i class="fas fa-code-branch fa-sm"></i> IDE <span id="ide-span" class="text-muted" style="display:none">(Zintegrowane Środowisko Programistyczne)</span>
+        </h2>
+        <div>Visual Studio Code</div>
+        <div onclick="idedwnl1()"><input id="idedwnl-1" type="text" value="https://code.visualstudio.com/download" style="cursor:pointer" disabled></div>
+        <br>
+        <div>Notepad++</div>
+        <div onclick="idedwnl2()"><input id="idedwnl-2" type="text" value="https://notepad-plus-plus.org/downloads/" style="cursor:pointer" disabled></div>
+        <hr>
+        <br>
+        <h2 id="vsc-pl-a" style="cursor:pointer" onclick="vscplugins()"><i class="fas fa-plug fa-sm"></i> Visual Studio Code - Plugins</h2>
+        <div id="vsc-plugins" style="display:none">
+            <div>Live Server <span class="text-muted">by Ritwick Dey</span></div>
+            <div onclick="vscplug4()"><input id="vscplug-4" type="text" value="https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer" style="cursor:pointer" disabled></div>
+            <br>
+            <div>One Dark Pro <span class="text-muted">by binaryify</span></div>
+            <div onclick="vscplug3()"><input id="vscplug-3" type="text" value="https://marketplace.visualstudio.com/items?itemName=zhuangtongfa.Material-theme" style="cursor:pointer" disabled></div>
+            <br>
+            <div>Prettier - Code formatter <span class="text-muted">by Prettier</span></div>
+            <div onclick="vscplug7()"><input id="vscplug-7" type="text" value="https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode" style="cursor:pointer" disabled></div>
+            <br>
+            <div>Kite <span id="kite-span" class="text-muted" style="cursor:pointer" onclick="kitespan()">(?)</span></div>
+            <div onclick="vscplug1()"><input id="vscplug-1" type="text" value="https://www.kite.com/integrations/vs-code/" style="cursor:pointer" disabled></div>
+            <br>
+            <div>Auto Rename Tag <span class="text-muted">by Jun Han</span></div>
+            <div onclick="vscplug2()"><input id="vscplug-2" type="text" value="https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag" style="cursor:pointer" disabled></div>
+            <br>
+            <div>Bracket Pair Colorizer <span class="text-muted">by CoenraadS</span></div>
+            <div onclick="vscplug6()"><input id="vscplug-6" type="text" value="https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer" style="cursor:pointer" disabled></div>
+            <br>
+            <div>Kite AutoComplete AI Code <span class="text-muted">by Kite</span></div>
+            <div onclick="vscplug5()"><input id="vscplug-5" type="text" value="https://marketplace.visualstudio.com/items?itemName=kiteco.kite" style="cursor:pointer" disabled>
+            </div>
         </div>
-        <div>
-            <h2><i class="fab fa-bootstrap fa-md"></i> Bootstrap</h2>
-            <div>CSS</div>
-            <input type="text" value="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css">
-            <br>
-            <input type="text" value="&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css&quot;&gt;">
-            <br><br>
-            <div>JavaScript</div>
-            <input type="text" value="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js">
-            <br>
-            <input type="text" value="&lt;script src=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js&quot; integrity=&quot;sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;">
-            <br><br>
-            <div>JavaScript Bundle</div>
-            <input type="text" value="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js">
-            <br>
-            <input type="text" value="&lt;script src=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js&quot; integrity=&quot;sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;">
-            <hr>
-            <br>
-            <h2><i class="fas fa-code fa-xs"></i> jQuery</h2>
-            <div>JavaScript</div>
-            <input type="text" value="https://code.jquery.com/jquery-3.6.0.min.js">
-            <br>
-            <input type="text" value="&lt;script src=&quot;https://code.jquery.com/jquery-3.6.0.min.js&quot;&gt;&lt;/script&gt;">
-            <hr>
-            <br>
-            <a id="ide-a" onclick="ide()" style="cursor:pointer"><i class="fas fa-code-branch fa-sm"></i> IDE <span id="ide-span" class="text-muted" style="display:none">(Zintegrowane Środowisko Programistyczne)</span></a>
-            <div>Visual Studio Code</div>
-            <div onclick="idedwnl1()"><input id="idedwnl-1" type="text" value="https://code.visualstudio.com/download" style="cursor:pointer" disabled></div>
-            <br>
-            <div>Notepad++</div>
-            <div onclick="idedwnl2()"><input id="idedwnl-2" type="text" value="https://notepad-plus-plus.org/downloads/" style="cursor:pointer" disabled></div>
-        </div>
-        <script src="script.js"></script>
-    </body>
+        <!-- NOW 8 -->
+    </div>
+    <script src="script.js"></script>
+</body>
 </html>
+
+<!--
+<br>
+        <div> <span class="text-muted">by </span></div>
+        <div onclick="vscplug()"><input id="vscplug-" type="text" value="" style="cursor:pointer" disabled></div>
+-->

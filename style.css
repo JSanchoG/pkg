@@ -1,39 +1,37 @@
 body {
-    padding: 10px;
+    padding: 10px 10px 50px 10px;
 }
+
 .code {
     background: #f9f9fa;
     font-size: .875rem;
 }
+
 .section {
     display: block;
 }
+
 input {
     width: 100%;
 }
+
 hr {
     margin-top: 50px;
 }
-@media (min-width: 1200px) {
-    a {
-        font-size: 2rem;
-    }
+
+h2 {
+    cursor: default;
 }
-a {
-    font-size: calc(1.325rem + .9vw);
-    margin-top: 0;
-    margin-bottom: .5rem;
-    font-weight: 500;
-    line-height: 1.2;
-}
+
 .fa-bootstrap {
     display: inline-block;
     position: relative;
     z-index: 2;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    background-image: radial-gradient(circle, #080135, #220e3c, #381643, #4d204a, #602c50);
+    background-image: radial-gradient(circle, #8e2de2, #8023e1, #7119e1, #600de0, #4a00e0);
 }
+
 .fa-code {
     display: inline-block;
     position: relative;
@@ -42,6 +40,7 @@ a {
     -webkit-text-fill-color: transparent;
     background-image: radial-gradient(circle, #77cff7, #5bb5e6, #409cd5, #2783c3, #0d6ab0);
 }
+
 .fa-code-branch {
     display: inline-block;
     position: relative;
@@ -49,4 +48,13 @@ a {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-image: radial-gradient(circle, #0078d7, #0082d1, #008ac8, #2491bd, #4796b3);
+}
+
+.fa-plug {
+    display: inline-block;
+    position: relative;
+    z-index: 2;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: radial-gradient(circle, #a8c0ff, #879be7, #6b76ce, #5351b3, #3f2b96);
 }
