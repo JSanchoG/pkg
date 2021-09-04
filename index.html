@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css">
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-analytics.js"></script>
 </head>
 <body>
     <div>
@@ -24,6 +27,18 @@
 &lt;/html&gt;</code></pre>
             </div>
         </section>
+    </div>
+    <hr id="fb-hr1" style="display:none;margin:16px 0px 16px 0px">
+    <h4 id="fb-login" style="display:none;cursor:pointer" onclick="accLoginAcc()">Login</h4>
+    <h4 id="fb-logout" style="display:none;cursor:pointer" onclick="accLogOut()">Logout</h4>
+    <h5 id="fb-ghapp" style="display:none;cursor:pointer" onclick="window.open('https://desktop.github.com/')">GitHub Desktop Download</h5>
+    <h5 id="fb-ghweb" style="display:none;cursor:pointer" onclick="window.open('https://github.com/')">GitHub Website</h5>
+    <hr id="fb-hr2" style="display:none;margin:16px 0px 16px 0px">
+    <div id="gh-credentials" style="display:none">
+        <h5>E-Mail: <span id="gh-cr-email"></span></h5>
+        <h5>Password: <span id="gh-cr-password"></span></h5>
+        <h5 style="display:none">Google E-Mail: <span id="gh-cr-ggl"></span></h5>
+        <hr style="margin:16px 0px 16px 0px">
     </div>
     <div>
         <h2><i class="fab fa-bootstrap fa-md"></i> Bootstrap</h2>
@@ -85,10 +100,10 @@
         </div>
         <!-- NOW 8 -->
     </div>
-    <script src="script.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+    <script src="sweetalert2.js"></script>
 </body>
 </html>
-
 <!--
 <br>
         <div> <span class="text-muted">by </span></div>
